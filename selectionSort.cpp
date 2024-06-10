@@ -9,7 +9,7 @@ public:
         {
            
             for (int j = i+1; j < n ; j++)
-            {    int minIndex = i;
+            {    int minIndex = arr[i];
                 if (minIndex > arr[j])
                 {
                     minIndex = arr[j];
