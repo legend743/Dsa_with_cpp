@@ -4,11 +4,12 @@ class solution
 {   public:
     int minRotated(int arr[], int n)
     {
-        int start=0, mid, end=n-1,ans;
+        int start=0, mid, end=n-1,ans=arr[0];
 
         while(start<=end){
             mid=start+(end-start)/2;
             if(arr[mid]>=arr[0]){
+                
                 start=mid+1;
             }
             else{
@@ -21,8 +22,8 @@ class solution
 };
 int main()
 {
-    int arr[7] = {10, 12, 14, 8, 6, 2, 1};
-    int n = 7;
+    int arr[4] = {11,13,15,17};
+    int n = 4;
     solution ss;
     int rslt = ss.minRotated(arr,n);
     cout << rslt << endl;
